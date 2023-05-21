@@ -1,0 +1,29 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  background: url("/images/bg-intro-desktop.png") hsl(0, 100%, 74%);
+  background-size: cover;
+}
+body .container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+  width: 80%;
+  height: 800px;
+}/*# sourceMappingURL=style.css.map */
