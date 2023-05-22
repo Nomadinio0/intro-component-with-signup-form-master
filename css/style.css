@@ -18,6 +18,9 @@ body {
   height: 100vh;
   background: url("/images/bg-intro-desktop.png") hsl(0, 100%, 74%);
   background-size: cover;
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+  color: white;
 }
 body .container {
   display: flex;
@@ -26,4 +29,80 @@ body .container {
   margin: auto;
   width: 80%;
   height: 800px;
+}
+body .container_one {
+  width: 50%;
+  margin: 40px;
+}
+body .container_one .heading {
+  margin-bottom: 30px;
+  font-size: 60px;
+  line-height: 60px;
+}
+body .container_one p {
+  font-size: 22px;
+}
+body .container_two {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  height: 80%;
+}
+body .container_two .trial {
+  margin: 20px 0;
+  height: 70px;
+  width: 100%;
+  text-align: center;
+  line-height: 70px;
+  background-color: hsl(248, 32%, 49%);
+  border-radius: 10px;
+  box-shadow: 0px 10px 0px 0px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+}
+body .container_two .trial span {
+  color: hsl(246, 25%, 77%);
+}
+body .container_two .form {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+  padding: 40px;
+  background-color: #fff;
+  border-radius: 10px;
+}
+body .container_two .form input {
+  padding-left: 30px;
+  font-size: 16px;
+  font-weight: 600;
+}
+body .container_two .form .formBtn {
+  cursor: pointer;
+  background-color: hsl(154, 59%, 51%);
+  text-transform: uppercase;
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+  letter-spacing: 1px;
+  box-shadow: inset 0px -5px 0px 0px rgba(0, 0, 0, 0.1);
+}
+body .container_two .form .formBtn:active {
+  background-color: hsl(154, 59%, 70%);
+}
+body .container_two .form input,
+body .container_two .form .formBtn {
+  width: 100%;
+  height: 60px;
+  border: 1px solid hsl(246, 25%, 77%);
+  border-radius: 10px;
+}
+body .container_two .form p {
+  color: hsl(246, 25%, 77%);
+  font-size: 14px;
+}
+body .container_two .form p a {
+  color: hsl(0, 100%, 74%);
+  text-decoration: none;
+  font-weight: bold;
 }/*# sourceMappingURL=style.css.map */
