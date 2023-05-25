@@ -22,16 +22,32 @@
     </div>
     <div class="container_two">
       <p class="trial"><span>Try it free 7 days</span> then $20/mo. thereafter</p>
-      <div class="form">
-        <input type="text" name="" id="" placeholder="First Name">
-        <input type="text" name="" id="" placeholder="Last Name">
-        <input type="email" name="" id="" placeholder="Email Address">
-        <input type="password" name="" id="" placeholder="Password">
-        <button class="formBtn">Claim your free trial</button>
+      <form class="form" id="form">
+        <div class="inputs">
+          <input class="input" type="text" name="firstName" id="firstName" placeholder="First Name">
+          <img class="error-icon" src="/images/icon-error.svg" alt="error icon">
+          <div class="error"></div>
+        </div>
+        <div class="inputs">
+          <input class="input" type="text" name="lastName" id="lastName" placeholder="Last Name">
+          <img class="error-icon" src="/images/icon-error.svg" alt="error icon">
+          <div class="error"></div>
+        </div>
+        <div class="inputs">
+          <input class="input" type="text" name="email" id="email" placeholder="Email Address">
+          <img class="error-icon" src="/images/icon-error.svg" alt="error icon">
+          <div class="error"></div>
+        </div>
+        <div class="inputs">
+          <input class="input" type="password" name="password" id="password" placeholder="Password">
+          <img class="error-icon" src="/images/icon-error.svg" alt="error icon">
+          <div class="error"></div>
+        </div>
+        <button class="formBtn" type="submit">Claim your free trial</button>
         <p>By clicking the button, you are agreeing to our
           <a href="#">Terms and Services</a>
         </p>
-      </div>
+      </form>
     </div>
   </div>
   <footer>

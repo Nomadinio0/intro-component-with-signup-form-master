@@ -72,6 +72,27 @@ body .container_two .form {
   background-color: #fff;
   border-radius: 10px;
 }
+body .container_two .form .inputs {
+  position: relative;
+  width: 100%;
+}
+body .container_two .form .inputs .error-icon {
+  display: none;
+  position: absolute;
+  top: 17%;
+  right: 5%;
+}
+body .container_two .form .inputs .error {
+  padding: 0;
+  margin: 5px 0 15px 0;
+  color: hsl(0, 100%, 74%);
+  font-style: italic;
+  text-align: right;
+  font-size: 12px;
+}
+body .container_two .form .inputs .visible {
+  display: block;
+}
 body .container_two .form input {
   padding-left: 30px;
   font-size: 16px;
@@ -108,8 +129,15 @@ body .container_two .form p a {
   text-decoration: none;
   font-weight: bold;
 }
+body .container_two .form .invalid {
+  border: 2px solid hsl(0, 100%, 74%);
+  color: hsl(0, 100%, 74%);
+}
 
 @media (max-width: 1000px) {
+  body {
+    background: url("/images/bg-intro-mobile.png") hsl(0, 100%, 74%);
+  }
   body .container {
     height: auto;
     width: 100%;
@@ -136,6 +164,13 @@ body .container_two .form p a {
   }
   body .container_two .form {
     padding: 25px;
+    height: 520px;
+  }
+  body .container_two .form div .error-icon {
+    top: 15%;
+  }
+  body .container_two .form div .error {
+    margin-bottom: 15px;
   }
   body .container_two .form input {
     padding-left: 15px;
@@ -149,7 +184,6 @@ body .container_two .form p a {
   }
   body .container_two .form input,
   body .container_two .form .formBtn {
-    margin-bottom: 15px;
     height: 50px;
     border-radius: 5px;
   }

@@ -82,6 +82,31 @@ body {
 				background-color: #fff;
 				border-radius: 10px;
 
+				.inputs {
+					position: relative;
+					width: 100%;
+
+					.error-icon {
+						display: none;
+						position: absolute;
+						top: 17%;
+						right: 5%;
+					}
+
+					.error {
+						padding: 0;
+						margin: 5px 0 15px 0;
+						color: $red;
+						font-style: italic;
+						text-align: right;
+						font-size: 12px;
+					}
+
+					.visible {
+						display: block;
+					}
+				}
+
 				input {
 					padding-left: 30px;
 					font-size: 16px;
@@ -123,6 +148,11 @@ body {
 						font-weight: bold;
 					}
 				}
+
+				.invalid {
+					border: 2px solid $red;
+					color: $red;
+				}
 			}
 		}
 	}
@@ -130,6 +160,7 @@ body {
 
 @media (max-width: 1000px) {
 	body {
+		background: url('/images/bg-intro-mobile.png') $red;
 		.container {
 			height: auto;
 			width: 100%;
@@ -163,6 +194,17 @@ body {
 
 				.form {
 					padding: 25px;
+					height: 520px;
+
+					div {
+						.error-icon {
+							top: 15%;
+						}
+
+						.error {
+							margin-bottom: 15px;
+						}
+					}
 
 					input {
 						padding-left: 15px;
@@ -178,7 +220,7 @@ body {
 
 					input,
 					.formBtn {
-						margin-bottom: 15px;
+						// margin-bottom: 10px;
 						height: 50px;
 						border-radius: 5px;
 					}
